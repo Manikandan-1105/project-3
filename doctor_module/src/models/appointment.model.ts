@@ -40,13 +40,6 @@ export class Appointment extends Entity {
   notes?: string;
 
   @property({
-    type: 'string',
-    required: false,
-    persist: false
-  })
-  doctorName?: string;
-
-  @property({
     type: 'date',
     defaultFn: 'now',
   })
